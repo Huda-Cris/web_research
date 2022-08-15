@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Stop NE Analysis </title>
+    <link rel="stylesheet" href="styles_research.css">
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo"> _ __HALI</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id= home_page >Home</a>
+                    
+                </li>
+                <li class="navbar__item">
+                    <a href="research_index.html" class="navbar__links  navbar__links--active"  id="research_page">Research</a>
+                    
+                </li>
+                <li class="navbar__item">
+                    <a href="about_index.html" class="navbar__links"  id="about_page">About</a>
+                    <div id="About" class="tabcontent"></div>
+                </li>
+                <li class="navbar__btn">
+                    <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" class="button" id="go_to_github" target="_blank">GITHUB</a>
+                </li>
+            </ul>
+        </div>
+    </nav> 
+    <div class="content">
+        <a href="intro"></a>
+        <h1 >OBJECTIVE</h1>
+        <br><br>
+        <li style="text-indent: 3%;">I focused this study primarily in the Northeast region of the States which include, New Jersey, Maryland, Rhode Island, and Pennsylvania. From Stanford's Open Policing Project, I have gathered, compiled and analyzed datasets of these four states.</li>
+        <div class="pic_container">
+            <h3>New Jersey</h3>
+            <img src="images/state_pics/nj_pic.png" alt="New Jersey">
+            <h3>Rhode Island</h3>
+            <img src="images/state_pics/ri_pic.png" alt="Rhode Island">
+            <h3>Maryland</h3>
+            <img src="images/state_pics/md_pic.png" alt="Maryland">
+            <h3>Pennsylvania</h3>
+            <img src="images/state_pics/pa_pic.png" id="pa_pic" alt="Pennsylvania">
+        </div>
+        <li style="text-indent: 3%;" class="pop_table">Naturally, various criteria must be considered in order to correctly determine whether or not discrepancies exist. For instance, the percentage of each demographic by region, as well as the stop search and outcome rates. This may be further subdivided by race, gender, year, and even district.</li>
+        <br><br>
+        <li style="text-indent: 3%;" >The table below contains an approximation of population by state as well as average data on demographic population. It is critical to remember these percentages since they will aid in our analysis later on.</li>
+        <br><br>
+        <h3 id="pop_table_title" style="text-indent:15% ; color: rgb(64, 118, 227)">Population per Demographic Data</h3>
+        <br>
+        <img src="images/pop_table.png" alt="Population/Demographic Table" id="ri_rea" style="width: 800px;height:300px; margin-left:140px">
+        <br><br>
+        <h2 style="color: rgb(129, 128, 128);">--------------------------------------------------------------------------------------------------------------------</h2>
+        <br>
+        <h1>MATERIALS/METHOD</h1>
+        <br><br>
+        <li>Data setswere aquired from <a href="https://openpolicing.stanford.edu/data/ style" style="color: rgb(164, 215, 232);">Stanford Open Policing Project.</a></li>
+        <li>The table below lists some of the major characteristics that were utilised while carrying out this project.</li><br><br>
+        <h3 id="pop_table_title" style="text-indent:3% ;color: rgb(64, 118, 227);">Notable Features of the Datasets</h3><br>
+        <img src="images/notable_features.png" alt="Data Set Notable features" id="ri_rea" style="width: 850px;height:300px; margin-left:10px"><br><br><br>
+        <li>All coding was done using Python's various libraries, which included:
+            <br><br>
+            <ul>
+                <li>Pandas</li><br>
+                <li>Scipy</li><br>
+                <li id="go_to_mat">Numpy</li><br>
+                <li >Matplotlib</li><br>
+                <li >Sklearn</li><br>
+            </ul>
+        </li>
+        <li >In this project, I was also able to employ the Sklearn Library to implement a Machine Learning Algorithm called Decision Tree.</li>
+        <li style="color: rgb(164, 215, 232); font-weight:bolder; padding: 2%; font-size: larger;">What is Machine Learning?</li>
+        <ul>
+            <li>Machine learning is a subfield of artificial intelligence, which is broadly defined as the capability of a machine to imitate intelligent human behavior. Artificial intelligence systems are used to perform complex tasks in a way that is similar to how humans solve problems.
+                <li style="padding-top: 2%;">For starters, Machine learning is classified into three types: supervised learning, unsupervised learning, and reinforcement learning.</li>
+                <p style="padding-top:2%; margin-left: 5%;">-  <a href="https://www.ibm.com/cloud/learn/supervised-learning" style="color: white; font-weight: bolder;" target="_blank">Supervised</a> is distinguished by the use of labeled datasets to train algorithms that properly categorize data or predict outcomes. As input data is fed into the model, the weights are adjusted until the model is well fitted, which occurs as part of the cross validation process.</p>
+                <p style="padding-top:2%; margin-left: 5%;">-  <a href="https://www.ibm.com/cloud/learn/unsupervised-learning" style="color: white;font-weight: bolder;" target="_blank">Unsupervised</a> , without the need for human interaction, these algorithms uncover hidden patterns or data groupings. Because of its capacity to detect similarities and contrasts in data, it is a perfect option for exploratory data analysis, cross-selling techniques, consumer segmentation, and picture identification.</p>
+                <p style="padding-top:2%; margin-left: 5%;">-  <a href="https://developer.ibm.com/articles/cc-reinforcement-learning-train-software-agent/" style="color: white;font-weight: bolder;" target="_blank">Reinforcement</a> learning is a machine learning training strategy that rewards positive actions while penalizing undesirable ones. A reinforcement learning agent, in general, can detect and comprehend its surroundings, act, and learn via trial and error.</p>
+                <br>
+                <a href="https://mitsloan.mit.edu/ideas-made-to-matter/machine-learning-explained#:~:text=What%20is%20machine%20learning%3F,to%20how%20humans%20solve%20problems." style="color:rgb(164, 215, 232) ; font-weight: bolder;" target="_blank" > Click here for more information.</a> </li>
+        </ul>
+        <li style="color: rgb(164, 215, 232); font-weight:bolder; padding: 2%; font-size: larger;">What is a Decision Tree?</li>
+        <ul>
+            <li id="goto_mach">A decision tree is a form of supervised machine learning that is used to categorize or predict depending on the answers to a prior series of questions. The model is supervised learning in the sense that it is trained and evaluated on data that contains the desired classification.</li><br>
+            <li>When visualizing a decision tree it is best to think of a flowchart. Take this for example: </li><br><br>
+            <img src="images/decsion_tre_explain.png" alt="Decision Tree Example" id="ri_rea" style="width: 400px;height:300px" class="dec_tree"><br><br>
+            <li>Each node represents a feature. The features in this case consists of salary, commute and whether free coffee is provided. The higher the feature is in the tree the greater importance it has to the final outcome.</li><br>
+            <li>Typically, data analysts divide the data set into training and testing sections in a 4:1 ratio. The decision tree builds and fits the pattern in the training portion, and the accuracy of the model is measured in the testing section. </li>
+        </ul><br>
+        <h2 style="color: rgb(129, 128, 128);">--------------------------------------------------------------------------------------------------------------------</h2>
+        <br>
+        <h1>RESULTS</h1><br><br>
+        <li>The table below shows the average number of stops per race in each state. In terms of demographic population size, I noticed that while stop rates in most states remain steady, there is significant difference between the states.
+        </li> <br>
+        <h3 style="text-indent: 14%; color: rgb(64, 118, 227);">Rate of Stops Per Year Per Race in Proportion to Demographic</h3><br>
+        <div class="rates_container">
+            <img src="images/states_all.png" alt="All States" id="rates_pic">
+            <h3 id="y_axis">Rate of Stops</h3>  
+        </div>
+        <h3 id="x_axis">Years</h3><br><br>
+        <li style="color: rgb(164, 215, 232);">Pennsylvania</li><br>
+        <ul>
+            <li>Black stops rates average about 2.5x greater the white people in proportion to their population.</li><br>
+            <li> Hispanic stop rates average about 1.2x greater than white people.</li><br>
+            
+        </ul>
+        <li style="color: rgb(164, 215, 232);">Maryland</li><br>
+        <ul>
+            <li>Black stops rates average about 1.35x greater the white people in proportion to their population.</li><br>
+            <li> Hispanic stop rates average about 22% greater than white people.</li><br>
+            
+        </ul>
+        <li style="color: rgb(164, 215, 232);">New Jersey</li><br>
+        <ul>
+            <li>Black stops rates average about 2.67x greater the white people in proportion to their population.</li><br>
+            <li>Hispanic and white individuals average about the same in New Jersey with only a difference of 0.14%.</li><br>
+            
+        </ul>
+        <li style="color: rgb(164, 215, 232);">Rhode Island</li><br>
+        <ul>
+            <li>The range in years in Rhode Island is much greater then the other three states, hence seeing such fluctuation is not totally abnormal.
+                Despite this however, there remains a consistent disparity between black and white individuals. </li><br>
+                <li>Between the years 2005-2006, black stops rates jumped 10% while white stops rates only jumped about 5%. Interestingly, Black stops rates steadily increased at a greater rate then both white and Hispanic stop rates.</li><br>
+                <li>As Rhode Island was the only state of the group with fluctuating patter, I decided to looked at the average reasons for stops. </li><br><br>
+                 <h3 style="text-indent: 25%; color: rgb(64, 118, 227);">Average reasons for stops in Rhode Island</h3><br>
+        </ul>
+        <img id="ri_rea" src="images/ri_reason_stops.png" alt="Rhode Island Reason for Stops">
+        <h3 id="y_axis" style="transform: rotate(270deg);width: 150px;margin-top: -30%;margin-left: 10%;font-size: larger;">Averages</h3>
+        <h3 id="x_axis" style=" margin-left: 48%;font-size: larger;margin-top: 300px;" >Race</h3><br><br>
+       <ul>
+        <li>The chart above shows the percentage of common reasons for stoppage for each race in Rhode Island. Although speeding is the most common across all three ethnicities, equipment/inspection violations are 10% more common among black and Hispanic people.</li><br>
+       </ul>
+       <li>However, this might be due to the concentration of a specific race being higher in 'busier' sites with increased police activity. To furthur determine whether there is a bias, let's examine the success rates of the searches.</li><br><br>
+        <img id="ri_rea" src="images/search_hit_rates.png" alt="SEARCH AND HIT RATES OF STATES"><br><br><br>
+        <li>Taking <a href="https://www.jstor.org/stable/26422360" style="color: rgb(164, 215, 232) ;">Becker's</a> outcome analysis into account,we can concur that if the search rates are higher in one race 
+            while the success rates are lower than its counterparts, then evidentially, bias exists.</li><br><br>
+        <li >Consider Pennsylvania:</li><br>
+        <ul>
+            <li>The search rate for black people is around 70% with just approximately 27% success accuracy.</li><br>
+               <li> In comparison,the search rate for white people is 17%, with an average success rate of 30%.</li><br>
+                <li>This suggests that black individuals are getting searched with less criteria and less eveidence then white people do.</li>
+        </ul><br><br>
+        <li>Here is a more visual graph of White v. Minority success rates in Pennsylvania to better get the picture: </li><br><br><br>
+        <img src="images/pen_success_hit.png" alt="Pennsylvania Hit Rates"id="ri_rea" style="width:800px;height:400px; margin-left: 60px;"><br><br><br>
+        <li style="color: rgb(164, 215, 232);font-size: larger;">Next, using the decision tree algorithm, I was able to determine not just the likelihood of a search occurring based on year, age, race, and gender, but also the outcome if a search did indeed occur.</li><br><br>
+        <li>Of course, all of these predictions are within the range of accuracy. Prediction of search rate averages 90% across states, whereas accuracy of prediction of outcomes is about 78%.  </li><br><br>
+        <li >Here is a table that contains the feature importance of the outcome modeled Decision Tree. <i class="remember" style="color: rgb(164, 215, 232);text-decoration: underline;cursor: pointer;">Remember</i> in decision trees the higher the feature in the tree the greater importance it serves.</li><br><br>
+        <h3 id="importance_features" style="text-indent:35% ;color: rgb(64, 118, 227);">Importance of Features by States</h3><br>
+        <img src="images/feature_import.png" alt="NOTABLES FEATURES IN TREES" id="ri_rea" style="width:600px;height:350px;">
+        <br><br>
+        <ul>
+            <li>Pennsylvania rates 'types' (standing fortypeof search) as its most important search. i found that if the search escalates to pedestrian level, the outcome almost always results in an arrest. Additionally, if the driver happened to be black, between the ages 19-30, the situation almost always leads to an arrest.</li><br><br>
+            <li>Compared to Pennsylvania, both New Jersey and Rhode Island consider 'years' to be the most important festure. This makes sense because they provide the greatest range in years. </li><br><br>
+            <li>Another noteworthy observation I made is that age is quite important. Sometimes even more so than race.
+                Maryland, for example, holds age at about 57% of importance. I observed that the younger you are, the more probable it is that you will get arrested.
+            </li><br><br>
+            <li>Here is the first couple of levels of the outcome Decision Tree of Pennsylvania. And to give you a size reference, next to it is the full Decision Tree. </li><br>
+            <div class="tree_container">
+                <img class='trees'src="images/tree_visualization_short.png" alt=""> 
+                <img class='trees'src="images/tree_visualization.png" alt="">
+            </div>
+        </ul>
+        <h2 style="color: rgb(129, 128, 128);">--------------------------------------------------------------------------------------------------------------------</h2>
+        <br>
+        <h1>CONCLUSION/OUTLOOK</h1><br><br>
+        <li>In conclusion, it is quite apparant that some bias does exist, particularly in Pennsylvania and Rhode Island. </li><br><br>
+        <li style="color:rgb(164, 215, 232) ; font-size: larger;">Future prospects:     </li>
+            <br><br>
+            <ul>
+                <li>More enforcement on public data in every jurisdiction</li><br>
+                <li>Implement AI system to it records minimum requirements to solidify the integrity of the data</li><br>
+                <li>Analysis throughout traffic law changes</li><br>
+            </ul><br>
+            <h2 style="color: rgb(129, 128, 128);">--------------------------------------------------------------------------------------------------------------------</h2>
+            <br>
+            <h1>REFERENCES</h1><br>
+            <div style="list-style:square; color: rgb(129, 128, 128);">
+                <li >Becker, G. Nobel Lecture: The Economic way of looking at behavior. J. Polit. <div>Econ. 101, 385-409 (1993)
+                </li><br>
+                <li >Becker, G. Te Economics of Discrimination (Univ. of Chicago Press, 1957)</li><br>
+                <li >“The Stanford Open Policing Project.” Openpolicing.stanford.edu, 2020,<div> openpolicing.stanford.edu/data/
+                </li><br>
+                <li id="go_to_con" >Police. “2021 Police Violence Report.” Policeviolencereport.org, 2021, <div></div> policeviolencereport.org/
+                </li><br>
+                <li>The 2022 LSAMP Summer REU Program is sponsored by​​ - NSF HRD 1712733 </li>
+                <li>Huda-Cris. “Huda-Cris/Analysis-of-Trafic-Stops-Project.” GitHub, 2022, </li>
+            </div>
+    </div>
+<div>
+    <!-- <h2 style="color: rgb(129, 128, 128);">___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</h2> -->
+</div>   
+<div class="menu_container">
+    <ul  id="object" style="font-family:Arial; font-size: smaller; font-weight: bolder; color: rgb(103, 111, 111); text-indent: 5%; text-decoration: underline;"> Table of Contents</ul>
+    <ul class="menu_item" id="ob_ject">Objective</ul>
+    <ul class="menu_item" id="mat_met">Materials/Method</ul>
+    <ul class="menu_item" id="mach_lea">What Is Machine Learning?</ul>
+    <ul class="menu_item" id="result">Results</ul>
+    <ul class="menu_item" id="con_out">Conclusion/Outlook</ul>
+    <ul class="menu_item" id="refer">References</ul>
+</div>
+
+
+<br><br><br id="go_to_ref">
+
+</body>
+<script src="apps_research.js"></script>
+</html>

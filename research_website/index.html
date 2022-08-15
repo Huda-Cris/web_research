@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Stop NE Analysis </title>
+    <link rel="stylesheet" href="styles_home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">_ __HALI</a>
+            <div class="menu_container" onclick="myFunction_bars()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links  navbar__links--active" id= home_page >Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="research_index.html" class="navbar__links"  id="research_page">Research</a>
+                    <div id="Research" class="tabcontent" ></div>
+                </li>
+                <li class="navbar__item">
+                    <a href="about_index.html" class="navbar__links"  id="about_page">About</a>
+                    <div id="About" class="tabcontent"></div>
+                </li>
+                <li class="navbar__btn">
+                    <a href="https://github.com/Huda-Cris/Analysis-of-Trafic-Stops-Project" class="button" target="_blank" id="go_to_github">GITHUB</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <div class="content">
+            <p class="definition"> <i style="font-weight: bolder ;">Traffic Stop:</i> Commonly referred to as being pulled over, is a temporary detention of a driver of a vehicle by police to investigate a possible crime or minor violation of law.</p>
+            <p class="abtract"> <a style="font-weight: bolder ;">Abtract:</a> Every year, millions of individuals are stopped for traffic violations, making this one of the most common ways in which the public interacts with the police. Almost 1 in 10 of people killed by police in 2021 occurred during traffic stops. As the public-police interaction becomes more hostile, a question arises: Is there a racial discrepancy in police traffic stops? Because of the scarcity of data on traffic stops in general, answering this concern is challenging. Let’s take New York as an example, despite being one of the most populous states in the country, New York has implemented documentation of traffic stops undertaken by uniformed cops in 2021 under revised Local Law 45. My project's purpose is to see if there is any imbalance due to prejudice in traffic stops in New Jersey, Rhode Island, Pennsylvania, and Maryland, which leads to a disparity in fatalities such as death.</p>
+            <button class="ph_ab_btn" onclick="myFunction()">
+                <h4 style="color: white ; text-decoration: underline;" id="show">Show Abtract</h4>
+                <h4 style="color: white ; text-decoration: underline;" id="hide">Hide Abtract</h4>
+            </button >
+            <p id="myDIV" style="text-align:center ;">Every year, millions of individuals are stopped for traffic violations, making this one of the most common ways in which the public interacts with the police. Almost 1 in 10 of people killed by police in 2021 occurred durng traffic stops. As the public-police interaction becomes more hostile, a question arises: Is there a racial discrepancy in police traffic stops? Because of the scarcity of data on traffic stops in general, answering this concern is challenging. Let’s take New York as an example, despite being one of the most populous states in the country, New York has implemented documentation of traffic stops undertaken by uniformed cops in 2021 under revised Local Law 45. My project's purpose is to see if there is any imbalance due to prejudice in traffic stops in New Jersey, Rhode Island, Pennsylvania, and Maryland, which leads to a disparity in fatalities such as death.</p>
+            <button class="r_btn">
+                <a href="research_index.html" style="text-decoration:none ; font-size: large; font-family:emoji; font-weight:bold; color:  #d6dce7;" >GO TO RESEARCH</a>
+            </button>
+            <button class="ph_r_btn">
+                <a href="research_index.html" style="text-decoration:none ; font-size: small; font-family:emoji; font-weight:bold; color:  #d6dce7;" id="phone_re_button">GO TO RESEARCH</a>
+            </button >
+        </div>
+        <iframe id="heat_map" src="all_heatMap.html"></iframe>
+        <p style="color:rgb(135, 131, 131); margin-left:67%; font-size: small; font-family: fantasy;">* Heat Map Across, New jersey, Pennsylvania and Maryland of traffics stops</p>
+    </div>
+
+</body>
+<script src="apps_home.js"></script>
+</html>
